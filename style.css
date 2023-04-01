@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    border: 2px solid red;
+}
+#heading{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+    border: 4px solid black;
+    font-size: xx-large;
+    text-align: center;
+}
+#options{
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    /* border: 2px solid blue; */
+    background-color: rgb(0, 0, 0);
+}
+#optionsHeading{
+    color: red;
+    display: flex;
+    margin: auto;
+    font-size: larger;
+    border: 0px;
+}
+.opt{
+    display:flex;
+    margin: auto;
+    height: 3em;
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#resultContainer{
+    display: none;
+    position: fixed;
+    z-index: 0;
+    flex-direction: column;
+    height: 100px;
+    width: 200px;
+    border-color: blue;
+    /* background-color: rgb(70, 70, 200); */
+}
+#resultBlock{
+    color:yellow;
+    border: 0px;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}
+#resetButton{
+    margin :auto auto;
+    border: 0ch;
+    font-size: 30px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: bisque;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+#board{
+    display: none;
+    margin-top: 10px;
+    /* background: linear-gradient(rgb(129, 129, 129), rgb(109, 108, 107)); */
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid black;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.box{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+#line{
+    display: none;
+    background-color: blue;
+    position: relative;
+    left: 100px;
+    border: 0px;
+    height: 90vmin;
+    width: 2px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Zero Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="heading">
+        Let's Play
+    </div>
+    <div id="options">
+        <div id="optionsHeading">
+            Choose To Start
+        </div>
+        <div  class="opt" id="opt1" onclick="choose(0)">0</div>
+        <div  class="opt" id="opt2" onclick="choose(1)">X</div>
+        
+    </div>
+    <div id="container">
+        <div id="resultContainer">
+            <div id="resultBlock">
+                <h1>Over</h1>
+            </div>
+            <button onclick="reset()" id="resetButton">Reset</button>
+        </div>
+        <div id="board">
+            
+            <div onclick="clickFunction(this,0) ,checkWin(0)" class="box" id="box1"></div>
+            <div onclick="clickFunction(this,1) ,checkWin(1)" class="box" id="box2"></div>
+            <div onclick="clickFunction(this,2) ,checkWin(2)" class="box" id="box3"></div>
+            <div onclick="clickFunction(this,3) ,checkWin(3)" class="box" id="box4"></div>
+            <div onclick="clickFunction(this,4) ,checkWin(4)" class="box" id="box5"></div>
+            <div onclick="clickFunction(this,5) ,checkWin(5)" class="box" id="box6"></div>
+            <div onclick="clickFunction(this,6) ,checkWin(6)" class="box" id="box7"></div>
+            <div onclick="clickFunction(this,7) ,checkWin(7)" class="box" id="box8"></div>
+            <div onclick="clickFunction(this,8) ,checkWin(8)" class="box" id="box9"></div>
+            <div id="line">
+            </div>
+        </div>
+    </div>
+    <script src="working.js"></script>
+</body>
+</html>
